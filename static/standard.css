@@ -1,0 +1,27 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center-container {
+display: flex; /* Enables flexbox */
+justify-content: center; /* Centers items horizontally */
+}
+#query, #btnSearch {
+margin: 5px; /* Optional: Adds some space between the inputs */
+}
+/* If you want to center the list as well */
+.center {
+display: flex;
+justify-content: center;
+width: 100%; /* Full width */
+list-style-type: none; /* Removes default list styling */
+}
+
+

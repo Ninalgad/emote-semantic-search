@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- D3 -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+    <link rel="stylesheet" href="../static/standard.css">
+    <script src="../static/click.js"></script>
+ </head>
+
+<body style="background-color:white">
+  <div class="center-container">
+    <input type="text" id="query" size="20" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+    <input type="button" id="btnSearch" size="10" onclick="fetchSearch()" value="Submit"/>
+  </div>
+ <ul id="imgItems" class="center"></ul>
+ <ul id="txtItems" class="center"></ul>
+</body>
+
+</html>
